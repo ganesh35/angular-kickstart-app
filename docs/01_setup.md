@@ -123,7 +123,7 @@ so the file looks like:
 
 
 ## Adding basic views
-´´´sh
+```sh
 ng generate module views/private/dashboard --routing
 ng g component views/private/dashboard --module dashboard
 
@@ -134,14 +134,14 @@ ng generate module views/public/auth --routing
 ng g component views/public/auth/login --flat --module auth
 ng g component views/public/auth/logout --flat --module auth
 ng g component views/public/auth/register --flat --module auth
-´´´
+```
 
 
 
 
 ## Auth Module Routing
 
-´´´javascript
+```javascript
 // views/public/auth/auth-routing.module.ts
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -181,7 +181,7 @@ export class AuthRoutingModule { }
 
 ## Dashboard Module Routing
 
-´´´javascript
+```javascript
 // views/private/dashboard/dashboard-routing.module.ts
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -207,7 +207,7 @@ export class DashboardRoutingModule { }
 
 ## Profile Module Routing
 
-´´´javascript
+```javascript
 // views/private/profile/profile-routing.module.ts
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -235,7 +235,7 @@ export class ProfileRoutingModule { }
 
 ## App Module Routing
 
-´´´javascript
+```javascript
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FullLayoutComponent } from './layouts/full-layout/full-layout.component';
